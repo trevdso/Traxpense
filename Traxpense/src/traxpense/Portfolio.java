@@ -10,5 +10,11 @@ package traxpense;
  * @author Trevor
  */
 public class Portfolio extends Profile{
+    private String assets;
+    private String liabilities;
     
+    public Portfolio()
+    {
+        super();//creates an instance of its parent; Profile.
+    }
 }

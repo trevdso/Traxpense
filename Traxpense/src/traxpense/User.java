@@ -9,7 +9,7 @@ package traxpense;
  *
  * @author Trevor
  */
-public class Profile {
+public class User {
     protected String fName;
     protected String lName;
     protected String address;
@@ -19,12 +19,12 @@ public class Profile {
     protected String password;
     
     //this should be taken out because we dont want empty instances of Profile
-    public Profile(){
+    public User(){
         
     }
     
     //this can be our worst case instance of a Profile
-    public Profile(String fName, String lName, String userName, String password){
+    public User(String fName, String lName, String userName, String password){
         this.fName = fName;
         this.lName = lName;
         this.userName = userName;

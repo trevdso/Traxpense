@@ -9,7 +9,7 @@ package traxpense;
  *
  * @author Trevor
  */
-public class Portfolio extends Profile{
+public class Portfolio extends User{
     private String assets;
     private String liabilities;
     

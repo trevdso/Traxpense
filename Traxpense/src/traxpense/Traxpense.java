@@ -1,37 +1,30 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package traxpense;
 
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.scene.Scene;
+import javafx.scene.image.Image;
+import javafx.scene.layout.BorderPane;
+import javafx.fxml.FXMLLoader;
 
-/**
- *
- * @author Trevor
- */
+
 public class Traxpense extends Application {
-    
-    @Override
-    public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("FXMLone.fxml"));
-        
-        Scene scene = new Scene(root);
-        
-        stage.setScene(scene);
-        stage.show();
-    }
+	@Override
+	public void start(Stage primaryStage) {
+		try {
+			BorderPane root = (BorderPane)FXMLLoader.load(getClass().getResource("Main.fxml"));
+			Scene scene = new Scene(root,800,500); // x then y
+			scene.getStylesheets().add(getClass().getResource("traxpenseStyle.css").toExternalForm());
+			primaryStage.setScene(scene);
+			primaryStage.setTitle("Welcome To Traxpense");
+			primaryStage.getIcons().add(new Image(("file:TraxpeneLogo.png")));
+			primaryStage.show();
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        launch(args);
-    }
-    
+	public static void main(String[] args) {
+		launch(args);
+	}
 }

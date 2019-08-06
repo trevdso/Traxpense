@@ -1,4 +1,4 @@
-package traxpense;
+package traxpense.Controllers;
 
 public class ReportsController {
 

@@ -1,4 +1,4 @@
-package traxpense;
+package traxpense.Controllers;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;

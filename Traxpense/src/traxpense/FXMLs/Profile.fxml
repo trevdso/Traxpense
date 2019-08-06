@@ -11,9 +11,9 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #a9d5fc;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="traxpense.ReportsController">
+<AnchorPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #a9d5fc;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="traxpense.Controllers.ProfileController">
 <children>
-      <Label layoutX="21.0" layoutY="20.0" text="Reports">
+      <Label layoutX="21.0" layoutY="20.0" text="Profile">
          <font>
             <Font size="24.0" />
          </font></Label>

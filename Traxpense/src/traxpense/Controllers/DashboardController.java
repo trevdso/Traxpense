@@ -1,4 +1,4 @@
-package traxpense;
+package traxpense.Controllers;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
